@@ -1,5 +1,19 @@
+/* Reset margin and padding for body and html */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset margin and padding for the app container */
+.app-container {
+  margin: 0;
+  padding: 0;
+}
+
+/* App styles */
 .App {
   text-align: center;
+  font-size: 1.2em;
 }
 
 .App-logo {
@@ -15,12 +29,12 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 180vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 1.5em;
   color: white;
 }
 
@@ -35,4 +49,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Styles for navigation bar */
+nav {
+  background-color: #333;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+  font-size: large;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
 }
